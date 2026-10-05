@@ -9,7 +9,7 @@ A lightweight, automated, cross-platform Python script that cleans up project wo
 * **Zero External Dependencies:** Built using Python standard libraries (`os`, `shutil`, `pathlib`). Works out of the box on **Windows**, **macOS**, and **Linux**.
 * **Smart Extension & Context Routing:**
   * `.docx`, `.doc` $\rightarrow$ `File Management/DOCX/`
-  * `.pdf` (SRS, reports) $\rightarrow$ `File Management/PDFs/`
+  * `.pdf` $\rightarrow$ `File Management/PDFs/`
   * `.pptx`, slides & presentation PDFs $\rightarrow$ `File Management/Presentation/`
   * `.puml`, `.drawio` $\rightarrow$ `File Management/Diagrams/`
   * `.py` utilities $\rightarrow$ `File Management/Scripts/`
@@ -21,7 +21,7 @@ A lightweight, automated, cross-platform Python script that cleans up project wo
 ---
 
 ## 🚀 How to Use
-
+First place all the files into the workspace-file-management directory,
 Simply place `manage_files.py` in your project root directory and run:
 
 ```bash
