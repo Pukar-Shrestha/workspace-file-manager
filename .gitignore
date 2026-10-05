@@ -1,0 +1,47 @@
+# =============================================================================
+# Git Ignore Configuration - File Manager Only
+# =============================================================================
+
+# 1. Docker & Odoo Modules (Excluded from Git)
+docker-compose.yml
+docker-compose.yaml
+extra-addons/
+
+# 2. Sensitive Credentials & Passwords
+*pass*.txt
+docker pass.txt
+*.env
+.env.*
+
+# 3. Large Binaries (GitHub rejects files > 100 MB)
+*.exe
+*.msi
+*.dmg
+*.pkg
+File Management/Unused/*.exe
+File Management/Unused/Docker Desktop Installer.exe
+
+# 4. Office & Editor Temporary Lock Files
+~$*
+.~lock.*
+*.tmp
+Knowledge_Workspace_Presentation_Speech.docx
+
+# 5. Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# 6. Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# 7. OS & IDE Metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
