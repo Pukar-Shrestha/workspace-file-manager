@@ -57,4 +57,49 @@ Organization complete! (3 organized, 0 skipped/protected)
     ├── Diagrams/            # Architecture & PlantUML diagrams (.puml)
     ├── Scripts/             # Helper and generator scripts (.py)
     └── Others/              # Plain text and miscellaneous assets
-```
+```  
+## ? If you have more extension plans required to be managed  
+
+Adding a New File Extension
+
+Open manage_files.py.
+
+Search for the following section:
+
+
+EXTENSION_MAPPING = {  
+    ".docx": "DOCX",  
+    ".doc": "DOCX",  
+    ".pptx": "Presentation",  
+    ".ppt": "Presentation",  
+    ".puml": "Diagrams",  
+    ".drawio": "Diagrams",  
+    ".txt": "Others",  
+}  
+
+
+This is where you add a new file extension and specify its destination folder.
+
+For example, if .xml is your new extension, follow this format:
+
+".xml": "XML lists"
+
+
+Place the new entry inside the EXTENSION_MAPPING section:
+
+EXTENSION_MAPPING = {  
+    ".docx": "DOCX",  
+    ".doc": "DOCX",  
+    ".pptx": "Presentation",  
+    ".ppt": "Presentation",  
+    ".puml": "Diagrams",  
+    ".drawio": "Diagrams",  
+    ".txt": "Others",  
+    ".xml": "XML lists",  
+}
+
+
+Note: Make sure the extension starts with a dot (.) and the destination folder name is enclosed in quotes.
+
+
+
